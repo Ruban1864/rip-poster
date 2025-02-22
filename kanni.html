@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>கண்ணீர் அன்ஜலி</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:wght@700&display=swap');
+        body {
+            font-family: 'Noto Serif Tamil', serif;
+            background: radial-gradient(circle, #222, #000);
+            color: white;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            overflow: auto;
+            animation: fadeIn 2s ease-in-out;
+            padding-top: 20px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .poster {
+            border: 3px solid white;
+            padding: 20px;
+            width: 90%;
+            max-width: 450px;
+            background: rgba(0, 0, 0, 0.85);
+            box-sizing: border-box;
+            border-radius: 20px;
+            box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: slideUp 1.5s ease-in-out;
+        }
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .rip {
+            font-size: 40px;
+            font-weight: bold;
+            color: #ffcc00;
+            text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.8);
+            margin-bottom: 15px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            font-size: 30px;
+            font-weight: bold;
+            color: #ffcc00;
+            text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.7);
+            margin: 10px 0;
+        }
+        .date, p {
+            font-size: 22px;
+            margin: 5px 0;
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+        }
+        .footer {
+            background: linear-gradient(45deg, #ff4d4d, #ff0000);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 15px;
+            margin-top: 15px;
+            width: 100%;
+            text-align: center;
+            animation: pulse 2s infinite;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <div class="rip">🛣️ இமயம் சரிந்தது 😢🛣️</div>
+        <div class="image-container">
+            <img src="pp.jpg" alt="மறைந்தவர் படம்">
+        </div>
+        <h2>அமரர். G.S.Hariyanandham</h2>
+        <p>😢 21.02.2025 அன்று இரவு 9.00 மணிக்கு மறைந்தார். 😢</p>
+        <p>அன்னாரின் ஆத்மா சாந்தி அடைய இறைவனை வேண்டுகிறோம். 🙏</p>
+        <div class="footer">🥺 21.02.2025 இரவு 9PM 🥺</div>
+    </div>
+</body>
+</html>
